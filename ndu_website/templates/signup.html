@@ -1,0 +1,15 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% include "header.html"%}
+
+{% block content %}
+<div class="content">
+        <h1 class="heading">SignUp</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+              {{ wtf.quick_form(form, novalidate=True) }}
+          </div>
+        </div>
+      </div>
+{% endblock %}
